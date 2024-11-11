@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/form_style.css"/>
+
+</head>
+<body>
+    <form
+        action="https://formspree.io/f/xpwzpdjg"
+        method="POST"
+    >
+<!-- <form action="" method="post"> Connect to formspree.io-->
+        <h1>Maize and Blue Cupboard Appointments</h1>
+        <fieldset>
+            <legend>Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" placeholder="First Name" name="first-name" id="first-name"  required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" placeholder="Last Name" id="last-name" name="last-name" required>
+
+            <label for="program">Program: </label>
+            <input type="text" placeholder="Program" id="program" name="program">
+
+            <label for="time">Select Time Slot for Picking Up Grocery:</label>
+                <select name="time" id="time" required>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            
+                <div class="radio-group">
+                <p>Are you making this appointment for someone else?:</p>
+                <input type="radio" id="yes" name="appointment-for" value="yes"><label for="yes">Yes</label>
+                <input type="radio" id="no" name="appointment-for" value="no"><label for="no">No</label>
+            </div>
+
+            
+
+            <label for="feedback">Feedback</label>
+            <textarea rows="5" name="feedback" id="feedback" placeholder="Please leave us your feedback!" required=""></textarea>
+            <div>
+                <p>If you want to repeat this order again, which days do you want?</p>
+                <input type="checkbox" name="day" value="Friday"> Friday
+                <input type="checkbox" name="day" value="Saturday"> Saturday
+                <input type="checkbox" name="day" value="Sunday"> Sunday
+            </div>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
